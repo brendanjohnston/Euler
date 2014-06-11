@@ -15,7 +15,7 @@
       )
     )
   )
-  (identity s)
+  s
 )
 
 (println (str "solution: " (p002 4000000)))
