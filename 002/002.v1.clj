@@ -6,7 +6,7 @@
     (if
       (< y limit)
       (p002 limit y (+ x y) (if (even? y) (+ sum y) sum))
-      (identity sum)
+      sum
     )
   )
 )
