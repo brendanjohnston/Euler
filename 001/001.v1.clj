@@ -13,7 +13,8 @@
           )
         )
         (+ sum value)
-        sum)
+        sum
+      )
     )
     (range 0 limit)
   )
