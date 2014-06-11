@@ -7,6 +7,7 @@ function p002 (limit) {
         z;
 
     while (y < limit) {
+
         z = x + y;
         x = y;
         y = z;
