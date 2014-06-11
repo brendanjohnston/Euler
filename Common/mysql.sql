@@ -4,6 +4,8 @@ CREATE TABLE `tbl_integers` (
   `value` int(10) signed NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+ALTER TABLE `tbl_integers` ADD INDEX `index_integer_value`(`value`);
+
 DROP PROCEDURE IF EXISTS `sp_populate_integers`;
 
 DELIMITER //
