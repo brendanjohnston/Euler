@@ -7,7 +7,6 @@ CREATE PROCEDURE `sp_003` (IN `limit` INTEGER)
 BEGIN
 
     DECLARE `inner_limit` INTEGER;
-
     SET `inner_limit` = CEIL(SQRT(`limit`));
 
     SELECT
