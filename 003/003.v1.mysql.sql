@@ -16,7 +16,7 @@ BEGIN
     WHERE
         `value` BETWEEN 2 AND `inner_limit`
         AND
-        MOD(`limit`, `value`) = 0
+        `limit` % `value` = 0
         AND
         `value` NOT IN (
             SELECT
