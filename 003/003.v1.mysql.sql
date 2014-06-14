@@ -1,16 +1,16 @@
-
 DROP PROCEDURE IF EXISTS `sp_003`;
 
 DELIMITER $$
 
-CREATE PROCEDURE `sp_003` (IN `limit` INTEGER)
+CREATE PROCEDURE `sp_003` (IN `limit` BIGINT UNSIGNED, OUT `solution` INTEGER UNSIGNED)
 BEGIN
 
-    DECLARE `inner_limit` INTEGER;
+    DECLARE `inner_limit` BIGINT UNSIGNED;
+
     SET `inner_limit` = CEIL(SQRT(`limit`));
 
     SELECT
-        MAX(`value`) as `solution`
+        MAX(`value`) INTO `solution`
     FROM
     `tbl_integers`
     WHERE
@@ -35,3 +35,7 @@ BEGIN
 END
 
 $$
+
+CALL sp_003 (600851475143, @solution);
+
+SELECT @solution as `solution`;
