@@ -30,7 +30,7 @@ BEGIN
                     i2.`value` BETWEEN 2 AND (`inner_limit` / i1.`value`)
             WHERE
                 i1.`value` BETWEEN 2 AND `inner_limit`
-    );
+        );
 
 END
 
