@@ -20,7 +20,7 @@
             (conj primes value)
           )
         )
-        (vec (into [[2]] (range 3 inner_limit)))
+        (into [[2]] (range 3 inner_limit 2))
       )
     )
   )
