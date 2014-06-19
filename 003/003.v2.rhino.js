@@ -21,7 +21,7 @@ function p003 (limit) {
 
         var use = true;
 
-        for (var j = 0; j < i; j++) {
+        for (var j = 0, j_limit = factors[i] / 2; j < i && factors[j] <= j_limit; j++) {
 
             if (factors[i] % factors[j] == 0) {
 
