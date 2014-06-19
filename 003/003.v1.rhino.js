@@ -4,7 +4,7 @@ function p003 (limit) {
     var primes = [2],
         factor;
 
-    for (var i = primes[0] + 1, i_limit = Math.sqrt(limit); i <= i_limit; i++) {
+    for (var i = primes[0] + 1, i_limit = Math.sqrt(limit), i_increment = primes[0]; i <= i_limit; i += i_increment) {
 
         var use = true;
 
