@@ -26,4 +26,12 @@
   )
 )
 
+(defn now [] (java.util.Date.))
+
+(def d1 (.getTime (now)))
+
 (println (p003 600851475143))
+
+(def d2 (.getTime (now)))
+
+(println (str (- d2 d1) " ms"))
