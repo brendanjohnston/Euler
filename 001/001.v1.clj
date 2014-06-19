@@ -6,11 +6,9 @@
     (fn
       [sum, value]
       (if
-        (first
-          (filter
-            #(= 0 (mod value %))
-            multiples
-          )
+        (some
+          #(= 0 (mod value %))
+          multiples
         )
         (+ sum value)
         sum
