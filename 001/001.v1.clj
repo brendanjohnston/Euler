@@ -18,5 +18,13 @@
   )
 )
 
-(println (str "solution: " (p001 [3 5] 1000)))
+(defn now [] (java.util.Date.))
+
+(def d1 (.getTime (now)))
+
+(def solution (p001 [3 5] 1000))
+
+(def d2 (.getTime (now)))
+
+(println (str "solution: " solution ", in " (- d2 d1) "ms"))
 
