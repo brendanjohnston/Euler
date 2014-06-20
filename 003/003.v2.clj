@@ -18,8 +18,8 @@
 
 (def d1 (.getTime (now)))
 
-(println (p003 600851475143))
+(def solution (p003 600851475143))
 
 (def d2 (.getTime (now)))
 
-(println (str (- d2 d1) " ms"))
+(println (str "solution: " solution ", in " (- d2 d1) "ms"))
